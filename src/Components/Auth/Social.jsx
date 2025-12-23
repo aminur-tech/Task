@@ -13,7 +13,7 @@ const Social = () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
       toast.success(`Welcome ${result.user.displayName}! 🎉`);
-      axios.post('http://Localhost:3000/users', { email: result.user.email, name: result.user.displayName })
+      axios.post('https://server-sooty-rho-35.vercel.app/users', { email: result.user.email, name: result.user.displayName })
 
       navigate(from, { replace: true }); // navigate to previous page
     } catch (error) {

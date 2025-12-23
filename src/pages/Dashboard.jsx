@@ -3,7 +3,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-const API_URL = "http://localhost:3000"
+const API_URL = "https://server-sooty-rho-35.vercel.app"
 
 // ================= API =================
 const fetchTasks = async () => {

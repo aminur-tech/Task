@@ -22,7 +22,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       await signInWithEmailAndPassword(auth, data.email, data.password);
-      axios.post('http://Localhost:3000/users', {email: data.email, name: data.displayName})
+      axios.post('https://server-sooty-rho-35.vercel.app/users', {email: data.email, name: data.displayName})
       toast.success("Logged in successfully 🎉");
       navigate(from, { replace: true });
     } catch (error) {
