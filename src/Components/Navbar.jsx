@@ -6,7 +6,7 @@ const Navbar = () => {
   const { user } = useAuth();
 
   const navLinkClass = ({ isActive }) =>
-    `relative py-1 text-sm font-medium transition-all duration-300 ease-in-out ${
+    `relative py-1 text-md font-medium transition-all duration-300 ease-in-out ${
       isActive
         ? "text-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-black"
         : "text-gray-500 hover:text-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gray-300 hover:after:w-full after:transition-all after:duration-300"
